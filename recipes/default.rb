@@ -1,4 +1,12 @@
-include_recipe 'ubuntu'
+include_recipe 'chef-sugar'
+
+if ubuntu?
+  include_recipe 'ubuntu'
+elsif debian?
+  include_recipe 'apt'
+else
+  raise 'Unsupported platform'
+end
 
 package 'tinyproxy' do
   action :install
