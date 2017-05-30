@@ -14,12 +14,12 @@ default['tinyproxy']['config'].tap do |config|
   config['MaxSpareServers'] = '20'
   config['StartServers'] = '10'
   config['MaxRequestsPerChild'] = '0'
-  config['Allow'] = %w[
+  config['Allow'] = %w(
     127.0.0.1
-  ]
+  )
   config['ViaProxyName'] = 'tinyproxy'
-  config['ConnectPort'] = %w[
+  config['ConnectPort'] = %w(
     443
     563
-  ]
+  )
 end

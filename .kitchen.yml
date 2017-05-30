@@ -8,10 +8,12 @@ provisioner:
   require_chef_omnibus: 12.19.36-1
 
 platforms:
-  - name: ubuntu-15.04
   - name: ubuntu-16.04
+  - name: ubuntu-15.04
+  - name: debian-8.7
+  - name: debian-8.6
 
 suites:
   - name: default
     run_list:
-      - recipe[tinyproxy]
+      - recipe[devopsdance-tinyproxy::default]
