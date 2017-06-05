@@ -6,7 +6,7 @@ Install and configure tinyproxy.
 
 ## Requirements
 
-Chef `~> 12` is required.
+Chef `~> 12` or `~> 13` is required.
 
 ## Recipes
 ### default
@@ -15,7 +15,7 @@ The default recipe installs and start `tinyproxy` service.
 
 ## Attributes
 
-- `default['tinyproxy']['config']` holds tinyproxy configuration where hash is
+- `default['devopsdance-tinyproxy']['config']` holds tinyproxy configuration where hash is
   being an option name taken from `man 5 tinyproxy.conf`.
 
 ## Examples
