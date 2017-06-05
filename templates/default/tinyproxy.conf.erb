@@ -210,7 +210,8 @@ MaxRequestsPerChild <%= @config['MaxRequestsPerChild'] %>
 # The order of the controls are important. All incoming connections are
 # tested against the controls based on order.
 #
-<% @config['Allow'].each do |allow| %>
+<% @config['Allow'].each do |allow, enabled| %>
+<% next unless enabled %>
 Allow <%= allow %>
 <% end %>
 
@@ -292,7 +293,8 @@ ViaProxyName "<%= @config['ViaProxyName'] %>"
 #
 # The following two ports are used by SSL.
 #
-<% @config['ConnectPort'].each do |port| %>
+<% @config['ConnectPort'].each do |port, enabled| %>
+<% next unless enabled %>
 ConnectPort <%= port %>
 <% end %>
 
