@@ -17,7 +17,7 @@ template '/etc/tinyproxy.conf' do
   owner 'root'
   group 'root'
   mode '0644'
-  variables config: node['tinyproxy']['config']
+  variables config: node['devopsdance-tinyproxy']['config']
   action :create
   notifies :restart, 'service[tinyproxy]', :delayed
 end
