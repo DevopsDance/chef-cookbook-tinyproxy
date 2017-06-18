@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/DevopsDance/chef-cookbook-tinyproxy.svg?style=svg)](https://circleci.com/gh/DevopsDance/chef-cookbook-tinyproxy)
+[![Build Status](https://travis-ci.org/DevopsDance/chef-cookbook-tinyproxy.svg?branch=master)](https://travis-ci.org/DevopsDance/chef-cookbook-tinyproxy)
 
 # devopsdance-tinyproxy
 
